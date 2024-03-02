@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f2f2f2; */
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
+    background-attachment: fixed;
+}
+.navbar {
+    /* background-image: linear-gradient(to bottom right, #305170, #6DFC6B); */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: space-between; /* Align items to left and right */
+    align-items: center; /* Center vertically */
+    padding: 10px 20px; /* Add padding */
+    margin-inline: 200px;
+}
+
+/* Style for the logo */
+.logo {
+    width: 50px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the heading */
+.heading {
+    font-size: 24px; /* Adjust font size */
+}
+h1{
+    color: white;
+}
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
+    border-radius: 10px;
+    text-align: center;
+}
+#registerForm, #loginForm{
+    padding: 20px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-image: linear-gradient(to bottom right, #6DFC6B, #305170);
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover{
+    background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
+}
+@media screen and (max-width: 480px) {
+    .container {
+        margin-top: 50px;
+    }
+}
