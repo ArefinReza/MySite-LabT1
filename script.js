@@ -26,4 +26,7 @@ document.getElementById("registerForm").addEventListener("submit", function(even
     else{
         alert("Registation Succesfull!");
     }
+
 });
+
+

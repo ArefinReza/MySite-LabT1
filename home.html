@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website with Navbar and Signout Button</title>
+    <title>Home Page</title>
     <style>
         body {
           margin: 0;
@@ -62,6 +62,7 @@
           border: none;
           border-radius: 5px;
           cursor: pointer;
+          font-weight: 600;
       }
 
       .signout-button:hover {
@@ -69,7 +70,7 @@
       }
 
       .content {
-          margin-left: 220px; /* Adjust this value according to the navbar width */
+          margin-left: 220px;
           padding: 20px;
           text-align: center;
       }
@@ -107,7 +108,7 @@
 
 <script>
   function showImage() {
-      var imagePaths = ['img1.png','img2.jpg','img3.jpg'];
+      var imagePaths = ['Images/img1.png','Images/img2.jpg','Images/img3.jpg'];
       imagePaths.forEach(function(path){
         var contentDiv = document.querySelector('.content');
         contentDiv.innerHTML = '';
