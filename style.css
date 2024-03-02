@@ -7,19 +7,47 @@ body {
     background-attachment: fixed;
 }
 .navbar {
-    /* background-image: linear-gradient(to bottom right, #305170, #6DFC6B); */
-    color: #fff; /* Text color */
     display: flex;
-    justify-content: space-between; /* Align items to left and right */
-    align-items: center; /* Center vertically */
-    padding: 10px 20px; /* Add padding */
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-left,
+.navbar-right {
+    flex: 0; /* Each side takes up equal space */
     margin-inline: 200px;
 }
 
-/* Style for the logo */
+.navbar-center {
+    flex: 3; /* Center takes up more space */
+    text-align: center;
+}
+
+/* Logo styles */
 .logo {
-    width: 50px; /* Adjust width */
-    height: auto; /* Maintain aspect ratio */
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Add spacing between logo and content */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center text on small screens */
+    }
+
+    .navbar-left,
+    .navbar-right,
+    .navbar-center {
+        flex: none; /* Reset flex property */
+        width: 100%; /* Each item takes up full width on small screens */
+        margin-bottom: 10px; /* Add spacing between items */
+    }
+
+    .logo {
+        margin-right: 0; /* Remove margin on small screens */
+    }
 }
 
 /* Style for the heading */
