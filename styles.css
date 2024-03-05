@@ -56,6 +56,7 @@ body {
 }
 h1{
     color: white;
+    
 }
 .container {
     max-width: 500px;
@@ -64,6 +65,7 @@ h1{
     background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
     border-radius: 10px;
     text-align: center;
+    filter: drop-shadow(20px 5px 5px rgba(0, 0, 0, 0.5));
 }
 #registerForm, #loginForm{
     padding: 20px;
@@ -78,11 +80,12 @@ button {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    
 }
 
 button {
     background-image: linear-gradient(to bottom right, #6DFC6B, #305170);
-    color: #fff;
+    color: #f5efef;
     cursor: pointer;
     width: 100%;
 }

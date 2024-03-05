@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <style>
-        body {
-          margin: 0;
-          padding: 0;
-          font-family: Arial, sans-serif;
-          color: #ffffff;
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
       }
-
+      
       /* Set background gradient to cover the entire viewport */
       html {
-          height: 100%;
-          background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
+        height: 100%;
+        background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
       }
 
       .navbar {
@@ -35,17 +35,17 @@
           list-style-type: none;
           padding: 0;
           margin: 0;
-      }
+        }
 
       .navbar li {
           margin-bottom: 10px;
       }
-
+      
       .navbar li a {
-          text-decoration: none;
-          color: #ffffff;
-          padding: 10px;
-          display: block;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px;
+        display: block;
       }
 
       .navbar li a:hover {
@@ -62,28 +62,28 @@
           padding: 5px 10px;
         }
       }
-
+      
       .signout-button {
-          position: fixed;
-          top: 20px;
-          right: 20px;
-          padding: 10px 20px;
-          background-image: linear-gradient(to bottom right, #6DFC6B, #305170);
-          color: #f6f1f1;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-weight: 600;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-image: linear-gradient(to bottom right, #6DFC6B, #305170);
+        color: #f6f1f1;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
       }
-
+      
       .signout-button:hover {
         background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
       }
-
+      
       .content {
-          margin-left: 220px;
-          padding: 20px;
-          text-align: center;
+        margin-left: 220px;
+        padding: 20px;
+        text-align: center;
       }
       a{
         text-decoration: none;
@@ -95,28 +95,24 @@
     </style>
 </head>
 <body>
-
-<div class="navbar">
+  <div class="navbar">
     <ul>
-        <li><a href="home.html" >Home</a></li>
-        <li><a href="#" onclick="showCV()">My CV</a></li>
+      <li><a href="home.php" >Home</a></li>
+      <li><a href="#" onclick="showCV()">My CV</a></li>
         <li><a href="#" onclick="showImage()">My Picture</a></li>
         <li><a href="#" onclick="showLink()">Important Link</a></li>
     </ul>
     
     <!-- <button class="signout-button" onclick="index.html">Sign Out</button> -->
-    <p class="signout-button"><a href="./index.html">Sign Out</a></p>
-</div>
+    <p class="signout-button"><a href="login.html">Sign Out</a></p>
+    </div>
 
-<div class="content">
-    <h1 >Welcome to My Website</h1>
-    <p>By clicking on the items in the nav bar, new elements will open on this page.</p>
-</div>
-<section id="about">
-  <!-- <h2>About</h2> -->
-  
-</section>
-
+    <div class="content">
+      <h1 >Welcome to My Website</h1>
+      <p>By clicking on the items in the nav bar, new elements will open on this page.</p>
+      </div>
+      
+        
 <script>
   function showImage() {
       var imagePaths = ['Images/img1.png','Images/img2.jpg','Images/img3.jpg'];
@@ -128,12 +124,12 @@
         imageElement.style.maxWidth='30%';
         imageElement.style.padding='20px';
         imageElement.style.marginLeft='200px';
-      
+        
         // contentDiv.appendChild(imageElement);
         document.body.appendChild(imageElement);
       })
       
-  }
+    }
 
   function showCV(){
     var contentDiv = document.querySelector('.content');
@@ -156,6 +152,6 @@
         contentDiv.innerHTML = '';
         window.location.href='importantLink.html';
   }
-</script>
+  </script>
 </body>
 </html>
