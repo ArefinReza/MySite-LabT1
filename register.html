@@ -10,14 +10,20 @@
     <div class="container">
         <h2>Register</h2>
         <form id="registerForm" action="register.php" method="post">
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-            <input type="text" id="username" name="username" placeholder="Username" required>
-            <input type="password" id="password" name="password" placeholder="Password" required>
-            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="" required>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="" required>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="" required>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="" required>
             <button type="submit" name="register">Register</button>
-            <p>Go Login <a href="./index.html">click here</a></p>
+            <p class="goFor">>>Back to <a href="./index.html">Login</a></p>
 
         </form>
     </div>

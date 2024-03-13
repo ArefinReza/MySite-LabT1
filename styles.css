@@ -1,9 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #f2f2f2; */
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
+    /* background-image: linear-gradient(to bottom right, #305170, #6DFC6B); */
     background-attachment: fixed;
 }
 .navbar {
@@ -54,21 +53,23 @@ body {
 .heading {
     font-size: 24px; /* Adjust font size */
 }
-h1{
-    color: white;
-    
+h1, h2{
+    color: rgb(10, 10, 10);
+    text-align: center;
 }
 .container {
     max-width: 500px;
-    margin: 100px auto;
-    padding: 20px;
-    background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
+    margin: 30px auto;
+    padding: 8px;
+    /* background-image: linear-gradient(to bottom right, #305170, #6DFC6B); */
+    /* filter: drop-shadow(20px 5px 5px rgba(0, 0, 0, 0.5)); */
     border-radius: 10px;
-    text-align: center;
-    filter: drop-shadow(20px 5px 5px rgba(0, 0, 0, 0.5));
 }
 #registerForm, #loginForm{
     padding: 20px;
+}
+label{
+    text-align: left;
 }
 input[type="text"],
 input[type="password"],
@@ -76,10 +77,13 @@ input[type="email"],
 button {
     display: block;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-bottom: 1px solid #000; /* Color of the bottom line */
+    outline: none;
     
 }
 
@@ -91,6 +95,15 @@ button {
 }
 button:hover{
     background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
+}
+.goFor{
+    background-color: #d9dee2;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
 }
 @media screen and (max-width: 480px) {
     .container {
