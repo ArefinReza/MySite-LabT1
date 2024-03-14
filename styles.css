@@ -73,16 +73,17 @@ label{
 }
 input[type="text"],
 input[type="password"],
-input[type="email"],
-button {
+input[type="email"]{
     display: block;
-    width: 100%;
+    width: 95%;
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 5px;
-    /* border: 1px solid #ccc; */
     border: none;
-    border-bottom: 1px solid #000; /* Color of the bottom line */
+    background-image: linear-gradient(to bottom, #6DFC6B, #305170);
+    background-size: 100% 2px; 
+    background-position: bottom;
+    background-repeat: no-repeat;
     outline: none;
     
 }
@@ -91,7 +92,14 @@ button {
     background-image: linear-gradient(to bottom right, #6DFC6B, #305170);
     color: #f5efef;
     cursor: pointer;
+    display: block;
     width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    
 }
 button:hover{
     background-image: linear-gradient(to bottom right, #305170, #6DFC6B);

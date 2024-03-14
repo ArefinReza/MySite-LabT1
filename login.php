@@ -23,15 +23,15 @@ if (isset($_POST['login'])) {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {
             echo "Login successful!";
-            header("Location: home.php");
+            header("Location: home.html");
         } else {
             // echo "Invalid password!";
-            header("Location: login.html");
+            header("Location: index.html");
             echo "<script>alert('Wrong password Sir !');</script>";
         }
     } else {
         // echo "User not found!";
-        header("Location: login.html");
+        header("Location: index.html");
         echo "<script>alert('Try Again Sir !');</script>";
     }
 }
